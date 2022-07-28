@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "../media/LogoFooter.svg";
+import Logo from "../media/logoFooter.svg";
 import FBIcon from "../media/facebookFooter.svg";
 import InstagramIcon from "../media/instagramFooter.svg";
 import DiscordIcon from "../media/discordFooter.svg";

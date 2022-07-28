@@ -48,7 +48,7 @@ const Dashboard = () => {
         }
         }}>
             {popup &&(
-               <PopupBox title={title}/>
+               <PopupBox title={title} setPopup={setPopup}/>
             )}
             <div id='DBMainDiv'>
                 <div className='DBNavMain'>

@@ -46,6 +46,7 @@ const NotePageBody = () =>{
     }
     useEffect(() => {
         getData();
+        
       }, []);
     const exit= ()=>{
         console.log(changed);
@@ -106,9 +107,21 @@ const NotePageBody = () =>{
                 <div className='Content'>
                     <textarea  value={message} onChange={handleMessageChange} className='NPBtextarea' onInputCapture={()=>{changed=true}}>Default text</textarea>
                 </div>
-            <div className='SaveButtonDiv'onClick={save}>
-            <span>Save</span>
-            </div>
+                <div className='NPButtons'>
+                    <div className="DeleteButtonDiv" onClick={()=>{
+                        const namecookie= new Cookies();
+                        const name=namecookie.get("name");
+                        deleteDoc(doc(firestore, name, noteid));
+                        navigate('/dashboard');
+
+                    }}>
+                        <span> Delete</span>
+                    </div>
+
+                    <div className='SaveButtonDiv'onClick={save}>
+                        <span>Save</span>
+                    </div>
+                </div>
         </div>
     );
 }

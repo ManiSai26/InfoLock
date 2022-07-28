@@ -21,9 +21,9 @@
     width: 93%;
 }
 .SaveButtonDiv{
-    margin-left: 90%;
-    margin-top: 20px;
-    padding: 5px 28px;
+    margin-left: 25px;
+    margin-right: 50px;
+    /* padding: 5px 28px; */
     width: fit-content;
     background-color: #00A82D;
     border-radius: 10px;
@@ -36,7 +36,29 @@
     font-size: 20px;
     font-family: 'Poppins';
     color: white;
+    padding: 20px;
 }
+
+.DeleteButtonDiv{
+    width: fit-content; 
+    border: 3px solid #00A82D;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.DeleteButtonDiv span{
+    font-size: 20px;
+    font-family: 'Poppins';
+    padding: 10px;
+}
+.NPButtons{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 40px;
+}
+
+
+
 .Body{
     /* text-align: left;
     display: flex;
@@ -76,6 +98,7 @@
 }
 .Content{
     margin-top: 15px;
+    margin-bottom: 25px;
     margin-left: 40px;
     height: 400px;
     width: 93%;
